@@ -18,3 +18,7 @@ def func():
 
 
 func()
+''' 
+OUTPUT:
+Password:  _`NFGm2rwf%1]5
+'''
