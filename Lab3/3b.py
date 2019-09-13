@@ -11,12 +11,9 @@ def pwd():
     num = [random.choice(string.digits)]
     symbol = [random.choice(string.punctuation)]
     p_all = upper + lower + num + symbol
-    if length == 4:
-        pwd = random.sample(p_all,length)
-    else:
-        for i in range(0,length-4):
-            pwd1 += random.sample([random.choice(string.ascii_uppercase)]+[random.choice(string.ascii_lowercase)]+[random.choice(string.digits)]+[random.choice(string.punctuation)],1)
-        pwd = random.sample(p_all,4)+pwd1
+    for i in range(0,length-4):
+        pwd1 += random.sample([random.choice(string.ascii_uppercase)]+[random.choice(string.ascii_lowercase)]+[random.choice(string.digits)]+[random.choice(string.punctuation)],1)
+    pwd = random.sample(p_all,4)+pwd1
     for i in pwd:
         pass1 += i
     print("Password:",pass1)
