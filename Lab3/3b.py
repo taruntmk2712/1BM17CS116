@@ -21,6 +21,7 @@ def pwd():
         pass1 += i
     print("Password:",pass1)
     
+pwd()
 ''' 
 OUTPUT:
 Password:  _`NFGm2rwf%1]5
