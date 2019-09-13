@@ -16,7 +16,7 @@ def pwd():
     else:
         for i in range(0,length-4):
             pwd1 += random.sample([random.choice(string.ascii_uppercase)]+[random.choice(string.ascii_lowercase)]+[random.choice(string.digits)]+[random.choice(string.punctuation)],1)
-        pwd = p_all+pwd1
+        pwd = random.sample(p_all,4)+pwd1
     for i in pwd:
         pass1 += i
     print("Password:",pass1)
