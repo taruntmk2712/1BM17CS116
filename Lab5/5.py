@@ -25,21 +25,19 @@ class Util:
             print("CUSTOMER",count+1,":",i.display())
             count +=1
     def count_1(s):
-        count = 0
-        count1 = 0
-        count2 = 0
+        count = [0,0,0]
         for i in s.list_call:
             a = i.display()
             if a[3] == 'STD':
-                count += 1
+                count[0] += 1
             elif a[3] == 'Local':
-                count1 += 1
+                count[1] += 1
             elif a[3] == 'ISD':
-                count2 += 1
+                count[2] += 1
         print("\nCOUNT:\n")
-        print("STD:",count)
-        print("Local:",count1)
-        print("ISD:",count2)
+        print("STD:",count[0])
+        print("Local:",count[1])
+        print("ISD:",count[2])
         
 
 call = '9990000001,9330000001,23,STD'
